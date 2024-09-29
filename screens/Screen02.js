@@ -4,11 +4,15 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { useState } from "react";
 import { TouchableOpacity } from "react-native";
 export default function Screen02({navigation}){
-    const [isChecked,setIschecked] = useState(true)
+    const [isChecked,setIschecked] = useState(false)
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const handleChecked = () => {
         setIschecked(!isChecked)
     }
     return(
+
         <View>
             <TouchableOpacity onPress={() => navigation.navigate("Screen01")}>
                 <Icon style={styles.returnIcon} name="arrow-left"  />
