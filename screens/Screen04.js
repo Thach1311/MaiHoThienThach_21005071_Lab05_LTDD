@@ -3,22 +3,18 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { useState } from "react";
 
 export default function Screen04({ navigation }) {
-
-    
-
     const products = [
         {
             id: 1,
             name: 'Product 1',
             price: 2.99,
             rating: 4.5,
-            mainImage: require('../assets/DATA/Container 7 (3).png'), // Hình ảnh chính
+            mainImage: require('../assets/DATA/Container_7_(3).png'),
             thumbnailImages: [
-                require('../assets/DATA/Container 7 (1).png'),
-                require('../assets/DATA/Container 7 (2).png'),
-                require('../assets/DATA/Container 7 (4).png'),
-                require('../assets/DATA/Container 7.png'),
-
+                require('../assets/DATA/Container_7_(1).png'),
+                require('../assets/DATA/Container_7_(2).png'),
+                require('../assets/DATA/Container_7_(4).png'),
+                require('../assets/DATA/Container_7.png'),
             ]
         },
         {
@@ -26,13 +22,12 @@ export default function Screen04({ navigation }) {
             name: 'Product 2',
             price: 3.99,
             rating: 4.2,
-            mainImage: require('../assets/DATA/Container 7 (2).png'),
+            mainImage: require('../assets/DATA/Container_7_(2).png'),
             thumbnailImages: [
-                require('../assets/DATA/Container 7 (3).png'),
-                require('../assets/DATA/Container 7 (1).png'),
-                require('../assets/DATA/Container 7 (4).png'),
-                require('../assets/DATA/Container 7.png'),
-
+                require('../assets/DATA/Container_7_(3).png'),
+                require('../assets/DATA/Container_7_(1).png'),
+                require('../assets/DATA/Container_7_(4).png'),
+                require('../assets/DATA/Container_7.png'),
             ]
         },
         {
@@ -40,30 +35,27 @@ export default function Screen04({ navigation }) {
             name: 'Product 3',
             price: 5.99,
             rating: 4.8,
-            mainImage: require('../assets/DATA/Container 7 (1).png'),
+            mainImage: require('../assets/DATA/Container_7_(1).png'),
             thumbnailImages: [
-                require('../assets/DATA/Container 7 (2).png'),
-                require('../assets/DATA/Container 7 (4).png'),
-                require('../assets/DATA/Container 7 (3).png'),
-                require('../assets/DATA/Container 7.png'),
-
+                require('../assets/DATA/Container_7_(2).png'),
+                require('../assets/DATA/Container_7_(4).png'),
+                require('../assets/DATA/Container_7_(3).png'),
+                require('../assets/DATA/Container_7.png'),
             ]
         },
-
         {
-          id: 4,
-          name: 'Product 4',
-          price: 6.99,
-          rating: 4.8,
-          mainImage: require('../assets/DATA/Container 7 (1).png'),
-          thumbnailImages: [
-              require('../assets/DATA/Container 7 (2).png'),
-              require('../assets/DATA/Container 7 (4).png'),
-              require('../assets/DATA/Container 7 (3).png'),
-              require('../assets/DATA/Container 7.png'),
-
-          ]
-      },
+            id: 4,
+            name: 'Product 4',
+            price: 6.99,
+            rating: 4.8,
+            mainImage: require('../assets/DATA/Container_7_(1).png'),
+            thumbnailImages: [
+                require('../assets/DATA/Container_7_(2).png'),
+                require('../assets/DATA/Container_7_(4).png'),
+                require('../assets/DATA/Container_7_(3).png'),
+                require('../assets/DATA/Container_7.png'),
+            ]
+        },
     ];
 
     const [selectedProduct, setSelectedProduct] = useState(products[0]);
@@ -85,22 +77,20 @@ export default function Screen04({ navigation }) {
     };
 
     return (
-        <View style={{ padding: 5 ,height:'100%',overflow:'scroll',width:'100%'}}>
-
+        <View style={{ padding: 5, height: '100%', overflow: 'scroll', width: '100%' }}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Icon name="arrow-left" size={20} onPress={() => navigation.goBack()} />
                 <Text style={{ fontWeight: '700', marginLeft: 20 }}>{selectedProduct.name}</Text>
             </View>
 
-            <View style={{ alignItems:'center', marginVertical: 5 }}>
+            <View style={{ alignItems: 'center', marginVertical: 5 }}>
                 <Image source={selectedProduct.mainImage} style={{ width: 300, height: 200 }} />
             </View>
 
-            <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 20 }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'center', marginBottom: 20 }}>
                 {selectedProduct.thumbnailImages.map((image, index) => (
                     <TouchableOpacity key={index} onPress={() => handleThumbnailClick(image)}>
                         <Image source={image} style={styles.thumbnail} />
-                       
                     </TouchableOpacity>
                 ))}
             </View>
@@ -115,7 +105,7 @@ export default function Screen04({ navigation }) {
             <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
                 <Text style={{ fontWeight: '600', fontSize: 20 }}>{selectedProduct.name}</Text>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 30 }}>
-                    <Image source={require('../assets/DATA/Rating 3.png')} style={{ width: 20, height: 20 }} />
+                    <Image source={require('../assets/DATA/Rating_3.png')} style={{ width: 20, height: 20 }} />
                     <Text>{selectedProduct.rating}</Text>
                 </View>
             </View>
@@ -151,7 +141,7 @@ export default function Screen04({ navigation }) {
                 <Text style={{ fontWeight: '700' }}>${(selectedProduct.price * quantity).toFixed(2)}</Text>
             </View>
 
-            <TouchableOpacity style={styles.addToCartButton} onPress={()=>{alert("Thêm sản phẩm thành công")}}>
+            <TouchableOpacity style={styles.addToCartButton} onPress={() => { alert("Thêm sản phẩm thành công"); }}>
                 <Text style={{ color: 'white' }}>Add to Cart</Text>
             </TouchableOpacity>
         </View>
@@ -160,16 +150,12 @@ export default function Screen04({ navigation }) {
 
 const styles = StyleSheet.create({
     thumbnail: {
-        // width: 150,
-        // height: 50,
         marginHorizontal: 5,
         borderRadius: 10,
-        borderWidth:'1px',
-        borderColor:'black'
+        borderWidth: 1,
+        borderColor: 'black'
     },
     promoContainer: {
-        // width: 100,
-        // height: 30,
         backgroundColor: '#e3b2b9',
         alignItems: 'center',
         justifyContent: 'center',
@@ -196,10 +182,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     addToCartButton: {
-       
         backgroundColor: '#24c3d9',
         padding: 10,
         alignItems: 'center',
         borderRadius: 5,
     }
-})
+});
