@@ -1,6 +1,6 @@
 import { StyleSheet, TextInput } from "react-native"
 import { View,Text,Image,Button,CheckBox } from "react-native"
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome'; //thu vien lay icon cua FontAwesome
 import { useState } from "react";
 import { TouchableOpacity } from "react-native";
 export default function Screen02({navigation}){
@@ -18,7 +18,7 @@ export default function Screen02({navigation}){
                 <Icon style={styles.returnIcon} name="arrow-left"  />
             </TouchableOpacity>
             <View style={styles.layout}>
-                <Image source={require('../assets/DATA/Image 19.png')}></Image>
+                <Image source={require('../assets/DATA/Image_19.png')}></Image>
                 <Text style={styles.textNice}>Nice to see you!</Text>
                 <Text style={styles.textCreat}>Create your account</Text>
 

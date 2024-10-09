@@ -5,7 +5,7 @@ export default function Screen01({navigation}){
     return(
         <View>
             <View style={{alignItems:'center',marginTop:'30px'}}>
-                <Image source={require('../assets/DATA/Container 17.png')}></Image>
+                <Image source={require('../assets/DATA/Container_17.png')}></Image>
             </View>
 
             <View style={{marginLeft:'30px'}}>

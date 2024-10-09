@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 export default function Screen03({navigation}){
     return (
         <View>
-            <Image style={{width:'100%'}} source={require('../assets/DATA/Image 20.png')}></Image>
+            <Image style={{width:'100%'}} source={require('../assets/DATA/Image_20.png')}></Image>
             <View style={{padding:'30px'}}>
                 <Text style={{fontWeight:'900',fontSize:'30px',marginTop:'30px',marginBottom:'40px'}}>Welcome!</Text>
                 <View style={{marginBottom:'20px'}}>

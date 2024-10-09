@@ -12,12 +12,12 @@ export default function Screen04({ navigation }) {
             name: 'Product 1',
             price: 2.99,
             rating: 4.5,
-            mainImage: require('../assets/DATA/Container 7 (3).png'), // Hình ảnh chính
+            mainImage: require('../assets/DATA/Container_7_(3).png'), // Hình ảnh chính
             thumbnailImages: [
-                require('../assets/DATA/Container 7 (1).png'),
-                require('../assets/DATA/Container 7 (2).png'),
-                require('../assets/DATA/Container 7 (4).png'),
-                require('../assets/DATA/Container 7.png'),
+                require('../assets/DATA/Container_7_(1).png'),
+                require('../assets/DATA/Container_7_(2).png'),
+                require('../assets/DATA/Container_7_(4).png'),
+                require('../assets/DATA/Container_7.png'),
 
             ]
         },
@@ -26,12 +26,12 @@ export default function Screen04({ navigation }) {
             name: 'Product 2',
             price: 3.99,
             rating: 4.2,
-            mainImage: require('../assets/DATA/Container 7 (2).png'),
+            mainImage: require('../assets/DATA/Container_7_(2).png'),
             thumbnailImages: [
-                require('../assets/DATA/Container 7 (3).png'),
-                require('../assets/DATA/Container 7 (1).png'),
-                require('../assets/DATA/Container 7 (4).png'),
-                require('../assets/DATA/Container 7.png'),
+                require('../assets/DATA/Container_7_(3).png'),
+                require('../assets/DATA/Container_7_(1).png'),
+                require('../assets/DATA/Container_7_(4).png'),
+                require('../assets/DATA/Container_7.png'),
 
             ]
         },
@@ -40,12 +40,12 @@ export default function Screen04({ navigation }) {
             name: 'Product 3',
             price: 5.99,
             rating: 4.8,
-            mainImage: require('../assets/DATA/Container 7 (1).png'),
+            mainImage: require('../assets/DATA/Container_7_(1).png'),
             thumbnailImages: [
-                require('../assets/DATA/Container 7 (2).png'),
-                require('../assets/DATA/Container 7 (4).png'),
-                require('../assets/DATA/Container 7 (3).png'),
-                require('../assets/DATA/Container 7.png'),
+                require('../assets/DATA/Container_7_(2).png'),
+                require('../assets/DATA/Container_7_(4).png'),
+                require('../assets/DATA/Container_7_(3).png'),
+                require('../assets/DATA/Container_7.png'),
 
             ]
         },
@@ -55,12 +55,12 @@ export default function Screen04({ navigation }) {
           name: 'Product 4',
           price: 6.99,
           rating: 4.8,
-          mainImage: require('../assets/DATA/Container 7 (1).png'),
+          mainImage: require('../assets/DATA/Container_7_(1).png'),
           thumbnailImages: [
-              require('../assets/DATA/Container 7 (2).png'),
-              require('../assets/DATA/Container 7 (4).png'),
-              require('../assets/DATA/Container 7 (3).png'),
-              require('../assets/DATA/Container 7.png'),
+              require('../assets/DATA/Container_7_(2).png'),
+              require('../assets/DATA/Container_7_(4).png'),
+              require('../assets/DATA/Container_7_(3).png'),
+              require('../assets/DATA/Container_7.png'),
 
           ]
       },
@@ -115,7 +115,7 @@ export default function Screen04({ navigation }) {
             <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
                 <Text style={{ fontWeight: '600', fontSize: 20 }}>{selectedProduct.name}</Text>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 30 }}>
-                    <Image source={require('../assets/DATA/Rating 3.png')} style={{ width: 20, height: 20 }} />
+                    <Image source={require('../assets/DATA/Rating_3.png')} style={{ width: 20, height: 20 }} />
                     <Text>{selectedProduct.rating}</Text>
                 </View>
             </View>
