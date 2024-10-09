@@ -1,8 +1,9 @@
 import { StyleSheet, TextInput } from "react-native";
-import { View, Text, Image, Button, CheckBox } from "react-native";
+import { View, Text, Image } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome'; // FontAwesome icon library
 import { useState } from "react";
 import { TouchableOpacity } from "react-native";
+import { CheckBox } from 'react-native-elements';
 
 export default function Screen02({ navigation }) {
   const [isChecked, setIsChecked] = useState(false);
